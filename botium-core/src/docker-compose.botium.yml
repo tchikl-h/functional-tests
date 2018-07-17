@@ -1,0 +1,11 @@
+version: "2"
+services:
+    botium:
+        build:
+            context: .
+            dockerfile: ./Dockerfile.botium
+        volumes:
+        - .:/usr/src/app
+        - ~/chatbot/functional-tests/env:/env
+        environment:
+            NODE_TLS_REJECT_UNAUTHORIZED: 0

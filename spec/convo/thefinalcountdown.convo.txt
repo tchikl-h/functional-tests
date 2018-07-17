@@ -1,0 +1,34 @@
+thefinalcountdown
+
+#me
+quelle heure est-il ?
+
+#bot default
+Il est 12h01
+
+#bot default
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "images": [
+          {
+            "url": "https://media.giphy.com/media/l0MYOUI5XfRk4LLWM/giphy.gif"
+          }
+        ]
+      }
+    }
+  ],
+
+  "from": {
+    "id": "123456",
+    "name": "botium bot"
+  },
+  "recipient": {
+    "id": "botiumuser",
+    "name": "me"
+  },
+  "inputHint": "acceptingInput"
+}

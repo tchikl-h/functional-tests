@@ -1,0 +1,166 @@
+test-basic
+
+#me
+hello
+
+#bot default
+Bonjour 😊
+Je suis Lilou, un Bot 🤖  pour t'assister dans tes demandes du quotidien chez Expertime.
+Utilise les propositions ci dessous pour naviguer ou pose moi directement tes questions, j'essaierai d'y répondre au mieux !
+
+#bot default
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Gestion & RH",
+        "images": [
+          {
+            "url": "https://tool.expertime.digital/imgs/lilou/gestionrh.png"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "postBack",
+            "title": "En savoir plus",
+            "text": "En savoir plus",
+            "diplayText": "En savoir plus",
+            "value": "Gestion et RH"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Support IT",
+        "images": [
+          {
+            "url": "https://tool.expertime.digital/imgs/lilou/supportit.png"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "postBack",
+            "title": "En savoir plus",
+            "text": "En savoir plus",
+            "diplayText": "En savoir plus",
+            "value": "Support IT"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Expertime",
+        "images": [
+          {
+            "url": "https://tool.expertime.digital/imgs/lilou/expertime.png"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "postBack",
+            "title": "En savoir plus",
+            "text": "En savoir plus",
+            "diplayText": "En savoir plus",
+            "value": "Expertime"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Ressources",
+        "images": [
+          {
+            "url": "https://tool.expertime.digital/imgs/lilou/ressources.png"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "postBack",
+            "title": "En savoir plus",
+            "text": "En savoir plus",
+            "diplayText": "En savoir plus",
+            "value": "Ressources"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Agences",
+        "images": [
+          {
+            "url": "https://tool.expertime.digital/imgs/lilou/agences.png"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "postBack",
+            "title": "En savoir plus",
+            "text": "En savoir plus",
+            "diplayText": "En savoir plus",
+            "value": "Agences"
+          }
+        ]
+      }
+    }
+  ],
+  "attachmentLayout": "carousel",
+
+  "from": {
+    "id": "123456",
+    "name": "botium bot"
+  },
+  "recipient": {
+    "id": "botiumuser",
+    "name": "me"
+  },
+  "inputHint": "acceptingInput"
+}
+
+#me
+ça va ?
+
+#bot default
+Ca va super merci !
+
+#me
+quelle heure est-il ?
+
+#bot default
+il est très précisément 16h46
+
+#bot default
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "images": [
+          {
+            "url": "https://media.giphy.com/media/l0MYOUI5XfRk4LLWM/giphy.gif"
+          }
+        ]
+      }
+    }
+  ],
+
+  "from": {
+    "id": "123456",
+    "name": "botium bot"
+  },
+  "recipient": {
+    "id": "botiumuser",
+    "name": "me"
+  },
+  "inputHint": "acceptingInput"
+}

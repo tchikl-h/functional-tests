@@ -1,0 +1,23 @@
+{
+  "name": "testmybot-sample-botframework",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jasmine",
+    "emulator": "botium-cli emulator console --convos ./spec/convo --config ./testmybot.json --testFile $1",
+    "emulatorBrowser": "botium-cli emulator browser --convos ./spec/convo --config ./testmybot.json"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "jasmine-reporters": "^2.2.1",
+    "botium-cli": "./botium-cli",
+    "testmybot": "./testmybot",
+    "botium-core": "./botium-core"
+  },
+  "author": "Florian Treml",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "socket.io": "^2.1.1",
+    "websocket": "^1.0.26"
+  }
+}
