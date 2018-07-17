@@ -3,9 +3,11 @@ const fs = require('fs')
 const yargsCmd = require('yargs')
 const _ = require('lodash')
 const debug = require('debug')('botium-cli')
+var testFile = "";
 
 const handleConfig = (argv, loadConfig) => {
   argv.verbose = argv.v = process.env.BOTIUM_VERBOSE === '1' || argv.verbose
+  testFile = argv.testFile;
 
   if (argv.verbose) {
     require('debug').enable('botium*')
@@ -71,4 +73,12 @@ yargsCmd.usage('Botium CLI\n\nUsage: $0 [options]') // eslint-disable-line
     nargs: 1,
     default: './botium.json'
   })
+  .option('testFile', {
+    alias: 't',
+    describe: 'Path to the test file',
+    nargs: 1,
+    default: './path/test.txt'
+  })
   .argv
+
+exports.testFile = testFile;
